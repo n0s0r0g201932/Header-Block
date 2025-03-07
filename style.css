@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+  
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    position: relative; 
+}
+
+.Logo-wrap-header {
+    width: 20%;
+    height: 20vh;
+    background-image: url(./img/logo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo-wrap-header a {
+    width: 100%;
+    height: 100%;
+}
+
+.Btn-wrap-header {
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.Btn-wrap-header a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.Btn-wrap-header a:hover {
+    color: rgb(59, 59, 59);
+    font-size: 1.7em;
+}
+
+.Search-wrap-header {
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.Search-wrap-header input {
+    width: 80%;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.Search-wrap-header svg {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 13%;
+}
+
+.burger-menu {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 45vh; 
+        min-height: 20vh; 
+        flex-direction: column;
+        gap: 5%;
+        padding-top: 10px; 
+    }
+
+    .Logo-wrap-header {
+        width: 90%;
+        background-size: 90%;
+        margin-top: 10px; 
+        transform: translate(0px, -30px);
+    }
+
+    .burger-menu {
+        display: flex; 
+        position: absolute;
+        top: 20px; 
+        right: 20px; 
+    }
+
+    .Btn-wrap-header {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute; 
+        top: 20vh; 
+        left: 0;
+        z-index: 1000;
+        padding-top: 10px; 
+        max-height: calc(100vh - 20vh); 
+        overflow-y: auto; 
+    }
+
+    .Btn-wrap-header.active {
+        display: flex; 
+    }
+
+    .Btn-wrap-header a {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .Search-wrap-header {
+        width: 90%;
+        margin-top: 10px; 
+    }
+
+    .Search-wrap-header svg {
+        margin-left: 50%;
+    }
+}
+
+.block_1 {
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+}
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Sections-wrap-footer {
+    width: 20%;
+    height: 40vh;
+}
+.Logo-wrap-footer {
+    width: 100%;
+    height: 20vh;
+    background-image: url(./img/logo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo-wrap-footer a {
+    width: 100%;
+    height: 100%;
+    
+}
+.Txt-wrap-footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+.Txt-wrap-footer span {
+    font-weight: bold;
+}
+.Txt-wrap-footer p {
+    font-size: 1em;
+    color: white;
+}
+.Blog-wrap-footer {
+    width: 20%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Blog-wrap-footer h1 {
+    color: white;
+}
+.Blog-wrap-footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.Blog-wrap-footer a:hover {
+    color: gray;
+    font-size: 1.3em;
+}
+.Help-wrap-footer {
+    width: 20%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Help-wrap-footer h1 {
+    color: white;
+}
+.Help-wrap-footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.Help-wrap-footer a:hover {
+    color: gray;
+    font-size: 1.3em;
+}
+.Map-wrap-footer {
+    width: 20%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Widget-wrap-footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+.Authorship-wrap-footer {
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Authorship-wrap-footer p {
+    color: white;
+    font-size: 1em;
+}
+.Social-wrap-footer {
+    width: 50%;
+    height: 10vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+.Social-wrap-footer svg {
+    color: white;
+    transition: 0.3s ease;
+}
+.Social-wrap-footer svg:hover {
+    color: gray;
+}
+.footer-burger-menu {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+}
+
+.footer-burger-button {
+    display: none; /* Скрываем кнопку бургер-меню по умолчанию */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.footer-nav-menu {
+    display: none; /* Скрываем меню по умолчанию */
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    position: absolute;
+    top: 100%; /* Позиционируем меню ниже кнопки */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    max-height: 50vh; /* Ограничиваем высоту меню */
+    overflow-y: auto; /* Добавляем прокрутку, если контента много */
+}
+
+.footer-nav-menu.active {
+    display: flex; /* Показываем меню при активации */
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+    .Sections-wrap-footer, .Blog-wrap-footer, .Help-wrap-footer, .Map-wrap-footer {
+        width: 100%;
+    }
+    .Widget-wrap-footer {
+        height: 20vh;
+        flex-direction: column;
+    }
+    .Authorship-wrap-footer,.Social-wrap-footer {
+        width: 100%;
+        text-align: center;
+    }
+    .Logo-wrap-footer {
+        background-size: 90%;
+    }
+    .Authorship-wrap-footer {
+        align-items: end;
+    }
+    .Authorship-wrap-footer p {
+        margin-bottom: 0px;
+    }
+    .footer-burger-menu {
+        display: block; /* Показываем бургер-меню на мобильных устройствах */
+    }
+
+    .footer-burger-button {
+        display: block; /* Показываем кнопку бургер-меню на мобильных устройствах */
+    }
+
+    .footer-nav-menu {
+        display: none; /* Скрываем меню по умолчанию на мобильных устройствах */
+    }
+
+    .footer-nav-menu.active {
+        display: flex; /* Показываем меню при активации */
+    }
+}
